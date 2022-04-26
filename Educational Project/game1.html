@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment 2 -  Individual Projec</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">   
+  </head>
+  <body>
+
+    <section>
+    <nav>
+        <div class="logo">
+            <p>Love Literature</p>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="learningoverview.html">LEARNING OVERVIEW</a></li>
+            <li><a href="game1.html" class="active">Verbs Quiz</a></li>
+            <li><a href="game2.html">Spell the Object</a></li>
+            <li><a href="game3.html">Jumbled Nouns</a></li>
+            <li><a href="developerdiary.html">Developer Diary</a></li>
+        </ul>
+    </nav>
+    </section>
+
+    <h1 class="eng_gram">
+        Verbs Quiz!!
+    </h1>
+
+    <img src="https://images.twinkl.co.uk/tw1n/image/private/t_630/image_repo/60/41/us-t-m-863-verbs-display-banner-english-united-states_ver_1.jpg" class="verb_img">
+
+    <form id = "quiz" name = "quiz">
+
+    <div class="verb">
+    <p class = "questions">Choose the correct word to complete the sentence. <br>I _____ an apple.</p>
+        <input type = "radio" name = "question_One" value = "Drove"> Drove<br>
+        <input type = "radio" name = "question_One" value = "Laughed"> Laughed<br>
+        <input type = "radio" name = "question_One" value = "Drank"> Drank<br>
+        <input type = "radio" name = "question_One" value = "Ate"> Ate<br>
+    </div>
+
+    <div class="verb">
+        <p class = "questions">Identify the correct word to complete the sentence.<br>The football player _____ a goal.</p>
+        <input type = "radio" name = "question_Two" value = "Scored"> Scored<br>
+        <input type = "radio" name = "question_Two" value = "Car"> Car<br>
+        <input type = "radio" name = "question_Two" value = "Jersey"> Jersey<br>
+        <input type = "radio" name = "question_Two" value = "Walk"> Walk<br>
+    </div>
+
+    <div class="verb">
+        <p class = "questions">Choose the correct word to complete the sentence:<br> The schoolgirl learned how to _____ on the computer</p>
+        <input type = "radio" name = "question_Three" value = "Type"> Type<br>
+        <input type = "radio" name = "question_Three" value = "Fly"> Fly<br>
+        <input type = "radio" name = "question_Three" value = "Skip"> Skip<br>
+    </div>
+
+    <div class="verb">
+        <p class = "questions">Identify the correct word to complete the sentence.<br>We _____ the room white.</p>
+        <input type = "radio" name = "question_Four" value = "Walked"> Walked<br>
+        <input type = "radio" name = "question_Four" value = "Talked"> Talked<br>
+        <input type = "radio" name = "question_Four" value = "Painted"> Painted<br>
+        <input type = "radio" name = "question_Four" value = "Learned"> Learned<br>
+    </div>
+
+    <input id = "button" type = "button" value = "Submit my Attempt!" onclick = "check();">
+    </form>
+
+    <div id = "after_submit">
+    <p id = "message"></p>
+    <p id = "number_correct"></p>
+    </div>
+
+    <section>
+    <div class="footer">
+        <div class="row">
+            
+        <div class="column">
+            <p>Are you a user of social Platform? Why not look us up and interact with us:</p>
+
+            <a href="https://www.facebook.com/studyatulster/">
+			<img id="footerimg" src='images/facebook.png'>
+			</a>
+			
+			<a href="https://twitter.com/ulsteruni">
+			<img id="footerimg" src='images/twitter.png'> 
+			</a>
+		
+			<a href="https://www.instagram.com/ulsteruni/">
+			<img id="footerimg" src='images/instagram.png'>
+			</a>
+        </div>  
+
+        <div class="column">
+            <h3>Contact us</h3>
+            <p>Contact Number: 028 71 123 456</p>
+            <p>Email Address: customerservices@lovelit.com</p>
+            <p>Operating Hours: 0900-1700 Mon-Sun</p>             
+        </div>
+    </section>
+  </body>
+</html>
+

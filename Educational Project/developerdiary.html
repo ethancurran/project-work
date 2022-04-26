@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment 2 -  Individual Projec</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">   
+  </head>
+  <body>
+
+    <section>
+    <nav>
+        <div class="logo">
+            <p>Love Literature</p>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="learningoverview.html">LEARNING OVERVIEW</a></li>
+            <li><a href="game1.html">Verbs Quiz</a></li>
+            <li><a href="game2.html">Spell the Object</a></li>
+            <li><a href="game3.html">Jumbled Nouns</a></li>
+            <li><a href="developerdiary.html" class="active">Developer Diary</a></li>
+        </ul>
+    </nav>
+    </section>
+
+    <section>
+        <h1 class="eng_gram">Game 1 - Verb Quiz</h1>
+
+        <div class="Text">
+            <p>The first interactive activity i have decided to go for within my assignment is a quiz that focuses on verbs. Here i formated the questions and answers within the HTML page and styled these <br>within the CSS page.</p>
+
+            <p><br>The hero of the page was developed with the use of JavaScript. Here how i done this was once the button was pressed it initiated the onClick command to begin. I called all variables <br>that was provided (questions) and applied an IF statement telling the console whcih was the correct answer. id this was the selected correctly then 1 was added to the users tally.</p>
+
+            <p><br>From here variables message was stated for what the console will print out when callied. i called score as underneath another if statement was used to calculate what the user had scored.<br> Three IF statements were used here so depending on how the user scored they would get the corrent feedback. Finally, the use of getElementById was used to select a singular piece of information and <br>finally provide the feedback to the user in the form of a pop up on the bottom left of the screen.</p>
+        </div>
+    </section>
+
+        <h1 class="eng_gram">Game 2 - Spell the Object</h1>
+
+        <div class="Text">
+            <p>The second interactive game that was implemented into my website was a spelling game. Here the game provided the user with a image and they have to guess what the image is and spell it correctly. All letters used are<br> recorded within either a correct or incorrect box.</p>
+
+            <p><br>Here within the Javascript a new aspect was used here which was the math.floor. The Math. floor() function returns the largest integer less than or equal to a given number. Here we want too only accept the correct<br> word which was called above.</p>
+
+            <p><br>The next step within this was then to retrive the users input letter and position this within the correct or incorrect catergory. By adding a event listener for each letter typed. Then through the use of a IF <br>statement then this sections the users input within the correct category.</p>
+
+            <p><br>The final aspect here then within the Javascript was replacing the users input for the underscore so they can spell out the correct word on screen. Again, this was done throught the use of a IF statement to ensure<br> corect letters were only selected. From here when all letters are selected the user is promted with a message that they win.</p>    
+        </div>
+    </section>
+
+    <h1 class="eng_gram">Game 3 - Jumbled Nouns</h1>
+
+        <div class="Text">
+            <p>The final interactive element added to the assessment was a drag and drop game. Here this was layout out in the form of asking the user a question with a series of jumbled letters <br>and asking to answer by solving the letter into the correct format.<br>
+            
+            <br>Within the Javascipt the first step taken within the HTML code we had to ensure that the letters called were "draggable="true". This allowed the letters to be draggable rather <br>than stationary. When Dealing with drag and drop within Javascipt there is 7 aspects to cover in order to have this working correctly. Here these are:<br> <strong>dragstart</strong>, <strong>drag</strong>, <strong>dragenter</strong>, <strong>dragleave</strong>, <strong>dragover</strong>, <strong>drop</strong>, <strong>dragend</strong>.<br>
+
+            <br>Here Dragstart was adding an effect on the letters when moving allowing the user to understand what letter is going where. Here doing this we called the opacaity of the letter being<br> dragged to 0.5 to allow the user to see letter behind to place the selected letter.Dragend was the same aspect of when the dragging motion was completed the opacity went back to 1 <br>which is is the default opacity.<br>
+
+            <br>With Dragover here the use of e.preventDefault() was added here ot prevent the browsers default behaviour.. in this instance to place the selected letter back to it first location. The drop <br>aspect has been added with the use of an if statement for the purpose of allowing the dragged item to land on the new desination requested. Now that this has been added <br>it allows the user to swap letters as they wish. <br>
+
+            <br>Finally adding the querySelectorAll for the div class for both the overall div and the letter div this then selects this code for the jacascript to take effect.<br><br>
+
+            
+        </div>
+    </section>
+
+     <section>
+        <div class="footer">
+            <div class="row">
+                
+            <div class="column">
+                <p>Are you a user of social Platform? Why not look us up and interact with us:</p>
+
+                <a href="https://www.facebook.com/studyatulster/">
+                <img id="footerimg" src='images/facebook.png'>
+                </a>
+                
+                <a href="https://twitter.com/ulsteruni">
+                <img id="footerimg" src='images/twitter.png'> 
+                </a>
+            
+                <a href="https://www.instagram.com/ulsteruni/">
+                <img id="footerimg" src='images/instagram.png'>
+                </a>
+            </div>  
+
+            <div class="column">
+                <h3>Contact us</h3>
+                <p>Contact Number: 028 71 123 456</p>
+                <p>Email Address: customerservices@lovelit.com</p>
+                <p>Operating Hours: 0900-1700 Mon-Sun</p>             
+            </div>
+    </section>
+  </body>
+</html>
